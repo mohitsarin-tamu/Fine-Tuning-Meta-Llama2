@@ -6,7 +6,7 @@ Dataset: https://huggingface.co/datasets/timdettmers/openassistant-guanaco
 - Fine Tuning was performed using a parameter efficient Transfer Learning method called LoRA (Low-Rank Adaptation of Large Language Models).
 - Just to understand how the fine-tuned model performs, we are only using 1000 samples of the given dataset to fine-tune the model.
 - The hyperparameters that I will be using for LORA is a rank of 64 with a scaling parameter of 16.
-- The training was done for 1 epoch, because of the huge memory consumption.
+- Initially, the training was done for only 1 epoch and then for 5 epochs due to the high memory consumption.
 - The same procedure will be performed while training on GPUs. We will use smaller batch sizes and a large number of epochs to improve the performance of the model on the given dataset.
 
 - Veriosn of PEFT: 0.4.0
